@@ -1,0 +1,566 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amirhosein Eftekhari · Creative Director</title>
+<meta name="description" content="Creative director in Kuwait making AI commercials, 2D animation and product films for Gulf brands.">
+<meta property="og:title" content="Amirhosein Eftekhari · Creative Director">
+<meta property="og:description" content="AI commercials, 2D animation and product films for Gulf brands.">
+<meta property="og:image" content="media/kuwait-graduate.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a light table of film frames — one title card, then a slate-labelled contact sheet you can filter */
+:root{
+  --paper:#eceae6;      /* light-table grey, slightly warm */
+  --card:#f7f6f3;
+  --ink:#16161a;
+  --muted:#66646a;
+  --rule:#cfccc6;
+  --cobalt:#2438e8;     /* single accent, a slate-marker blue */
+  --on-cobalt:#ffffff;
+  --f-display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+  --radius:3px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#111114; --card:#1a1a1f; --ink:#ecebe8; --muted:#9a98a0; --rule:#2c2c33; --cobalt:#7d8bff; --on-cobalt:#0d0d12; color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#111114; --card:#1a1a1f; --ink:#ecebe8; --muted:#9a98a0; --rule:#2c2c33; --cobalt:#7d8bff; --on-cobalt:#0d0d12; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;overflow-x:clip;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.6;font-variation-settings:"wdth" 100}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--cobalt);outline-offset:3px}
+.wrap{max-width:1320px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.mono{font-family:var(--f-mono);font-size:12px;letter-spacing:.02em}
+section[id],main[id]{scroll-margin-top:64px}
+
+/* nav */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--paper)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--paper) 90%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.brand{font-weight:800;font-variation-settings:"wdth" 112;letter-spacing:-.01em;text-decoration:none;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;flex:none}
+nav ul a{text-decoration:none;font-size:14px;color:var(--muted);padding-block:6px}
+nav ul a:hover{color:var(--ink)}
+@media (max-width:600px){
+  nav .wrap{padding-block:12px;gap:10px}
+  .brand{font-size:13px}
+  nav ul{gap:14px}
+  nav ul a{font-size:13px}
+  nav ul li.opt{display:none}
+}
+
+/* hero */
+.hero{padding-block:64px 40px;display:grid;gap:28px}
+.slate{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--muted)}
+.slate span b{color:var(--ink);font-weight:500}
+h1{margin:0;font-family:var(--f-display);font-weight:900;font-variation-settings:"wdth" 125;font-size:clamp(44px,9.2vw,138px);line-height:.88;letter-spacing:-.035em;text-transform:uppercase;text-wrap:balance}
+h1 .thin{font-weight:400;font-variation-settings:"wdth" 62;letter-spacing:-.01em}
+.name{margin:0;font-weight:700;font-size:clamp(18px,2vw,24px);letter-spacing:-.01em;font-variation-settings:"wdth" 110}
+.portrait{margin:0 0 22px;max-width:260px}
+.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+.lede{max-width:58ch;font-size:clamp(17px,1.6vw,20px);color:var(--muted)}
+.lede b{color:var(--ink);font-weight:600}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:var(--radius);font-weight:600;font-size:15px;text-decoration:none;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.btn.primary{background:var(--cobalt);border-color:var(--cobalt);color:var(--on-cobalt)}
+@media (max-width:600px){
+  .hero{padding-block:36px 28px;gap:20px}
+  .btn{flex:1 1 0;justify-content:center;padding:14px 12px}
+}
+
+/* featured strip: equal-height frames on desktop, cropped to fit */
+.featured{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px;padding-bottom:56px}
+.featured .tile:nth-child(1){grid-column:span 3}
+.featured .tile:nth-child(2){grid-column:span 6}
+.featured .tile:nth-child(3){grid-column:span 3}
+@media (min-width:901px){.featured .frame{aspect-ratio:auto!important;height:clamp(380px,62vh,640px)}}
+@media (max-width:900px){.featured{grid-template-columns:1fr 1fr;gap:10px;padding-bottom:40px}.featured .tile:nth-child(n){grid-column:span 1}.featured .tile:nth-child(2){grid-column:span 2;order:-1}}
+
+/* section heads */
+.sec-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:18px;border-top:2px solid var(--ink);padding-top:18px;margin-bottom:22px}
+h2{margin:0;font-family:var(--f-display);font-weight:800;font-variation-settings:"wdth" 118;font-size:clamp(28px,3.6vw,44px);letter-spacing:-.02em;line-height:1;text-transform:uppercase}
+.filters{display:flex;flex-wrap:wrap;gap:6px}
+.filters button{font:500 13px var(--f-body);padding:8px 14px;border-radius:999px;border:1px solid var(--rule);background:var(--card);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.filters button .n{font-family:var(--f-mono);font-size:11px;opacity:.6;margin-left:4px}
+@media (max-width:600px){
+  .sec-head{gap:14px}
+  .sec-head .filters{flex-wrap:nowrap;overflow-x:auto;width:100%;padding-bottom:4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .sec-head .filters::-webkit-scrollbar{display:none}
+  .filters button{flex:none;padding:9px 14px}
+}
+
+/* contact sheet */
+.sheet{columns:4 260px;column-gap:14px;padding-bottom:72px}
+.sheet .tile{break-inside:avoid;margin-bottom:14px}
+@media (max-width:600px){.sheet{columns:2;column-gap:10px}.sheet .cap .m{display:none}}
+.tile{display:grid;gap:8px;min-width:0}
+.tile[hidden]{display:none!important}
+.frame{position:relative;width:100%;border-radius:var(--radius);overflow:hidden;background:#000;cursor:pointer;border:0;padding:0;color:#fff;text-align:left}
+.frame img,.frame video{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.frame video{opacity:0;transition:opacity .25s}
+.frame.playing video{opacity:1}
+.frame .tc{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.62);color:#fff;padding:2px 6px;border-radius:2px;font-family:var(--f-mono);font-size:11px}
+.frame .ratio{position:absolute;right:8px;top:8px;background:rgba(0,0,0,.62);color:#fff;padding:2px 6px;border-radius:2px;font-family:var(--f-mono);font-size:11px}
+.frame .play{position:absolute;inset:auto auto 8px auto;right:8px;width:34px;height:34px;border-radius:50%;background:var(--cobalt);display:grid;place-items:center;opacity:0;transform:scale(.85);transition:.2s}
+.frame:hover .play,.frame:focus-visible .play{opacity:1;transform:none}
+@media (hover:none){.frame .play{opacity:1;transform:none;width:30px;height:30px}.frame .ratio{display:none}}
+@media (max-width:600px){.frame .tc{font-size:10px;left:6px;bottom:6px}.cap .t{font-size:13.5px}.cap .k{font-size:10px}}
+.frame .play svg{width:12px;height:12px;fill:var(--on-cobalt);margin-left:2px}
+.cap{display:grid;gap:1px}
+.cap .t{font-weight:700;font-size:15px;line-height:1.3}
+.cap .m{color:var(--muted);font-size:13px}
+.cap .k{font-family:var(--f-mono);font-size:11px;color:var(--cobalt);text-transform:uppercase;letter-spacing:.06em}
+@media (prefers-reduced-motion:reduce){.frame video,.frame .play{transition:none}}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px;padding-bottom:72px}
+@media (max-width:860px){.about{grid-template-columns:1fr;gap:28px}}
+.about p{margin:0 0 14px;max-width:62ch}
+.svc{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.svc li{display:grid;grid-template-columns:120px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.svc li b{font-weight:700}
+.svc li span{color:var(--muted);font-size:14.5px}
+@media (max-width:480px){.svc li{grid-template-columns:1fr;gap:2px}}
+.clients{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:22px;font-family:var(--f-display);font-weight:700;font-variation-settings:"wdth" 90;font-size:19px;text-transform:uppercase;letter-spacing:.01em}
+.clients span{color:var(--muted)}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper)}
+.contact .wrap{padding-block:64px;display:grid;gap:28px}
+.contact h2{font-size:clamp(36px,6vw,84px);font-variation-settings:"wdth" 125;font-weight:900}
+.contact .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.contact .links a,.contact .links div{border:1px solid color-mix(in srgb,var(--paper) 30%,transparent);border-radius:var(--radius);padding:16px;text-decoration:none;display:grid;gap:4px}
+.contact .links a:hover{border-color:var(--paper)}
+.contact .links .lbl{font-family:var(--f-mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;opacity:.65}
+.contact .links .v{font-weight:600;overflow-wrap:anywhere;user-select:all}
+.contact .copy{justify-self:start;margin-top:6px;font:500 12px var(--f-mono);padding:5px 10px;border-radius:2px;border:1px solid color-mix(in srgb,var(--paper) 40%,transparent);background:transparent;color:var(--paper);cursor:pointer}
+footer{padding-block:22px;color:var(--muted);font-size:13px}
+
+/* lightbox */
+dialog{border:0;padding:0;margin:0;background:#08080a;max-width:100vw;max-height:100vh;width:100vw;height:100vh;height:100dvh;max-height:100dvh;color:#fff}
+dialog::backdrop{background:rgba(8,8,10,.94)}
+.lb{position:relative;width:100%;height:100%;display:grid;grid-template-rows:minmax(0,1fr) auto auto;gap:12px;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb video{width:100%;height:100%;min-height:0;object-fit:contain;background:#000;border-radius:var(--radius)}
+.lb-bar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.lb-bar > div:first-child{min-width:0}
+.lb-bar .t{font-weight:700;font-size:17px;line-height:1.3}
+.lb-bar .m{opacity:.7;font-size:13.5px}
+.lb-nav{display:flex;gap:8px;flex:none}
+.lb-nav button{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;font-size:18px;cursor:pointer}
+.lb-nav button:hover{border-color:#fff}
+.lb-hint{display:none;font-size:12px;opacity:.55;text-align:center}
+
+/* ---------- motion ---------- */
+.hero{position:relative;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:-10% 0;z-index:-1;pointer-events:none;
+  background:radial-gradient(520px circle at var(--mx,70%) var(--my,30%),color-mix(in srgb,var(--cobalt) 16%,transparent),transparent 62%);
+  opacity:var(--glow,0);transition:opacity .6s}
+html.has-cursor .hero:hover{--glow:1}
+
+/* custom cursor (mouse only) */
+.cursor-dot,.cursor-ring{position:fixed;left:0;top:0;z-index:100;pointer-events:none;border-radius:50%;opacity:0;transform:translate3d(-100px,-100px,0)}
+.cursor-dot{width:6px;height:6px;margin:-3px 0 0 -3px;background:var(--cobalt);transition:opacity .2s}
+.cursor-ring{width:34px;height:34px;margin:-17px 0 0 -17px;border:1.5px solid var(--ink);display:grid;place-items:center;
+  transition:opacity .2s,width .3s cubic-bezier(.2,.7,.2,1),height .3s cubic-bezier(.2,.7,.2,1),margin .3s cubic-bezier(.2,.7,.2,1),background-color .3s,border-color .3s}
+.cursor-ring span{font:500 10px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--on-cobalt);opacity:0;transition:opacity .2s}
+.cursor-ring.is-link{width:54px;height:54px;margin:-27px 0 0 -27px;border-color:var(--cobalt)}
+.cursor-ring.is-play{width:78px;height:78px;margin:-39px 0 0 -39px;background:var(--cobalt);border-color:var(--cobalt)}
+.cursor-ring.is-play span{opacity:1}
+.cursor-ring.is-down{width:24px;height:24px;margin:-12px 0 0 -12px}
+html.has-cursor.c-on .cursor-dot,html.has-cursor.c-on .cursor-ring{opacity:1}
+html.has-cursor.c-on .cursor-ring.is-play ~ .cursor-dot{opacity:0}
+html.has-cursor,html.has-cursor *{cursor:none!important}
+html.has-cursor dialog,html.has-cursor dialog *{cursor:auto!important}
+html.lb-open .cursor-dot,html.lb-open .cursor-ring{opacity:0!important}
+html.has-cursor .frame .play{display:none}
+
+/* tilt + inner parallax on film frames */
+html.has-cursor .frame{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .55s cubic-bezier(.2,.7,.2,1),box-shadow .55s}
+html.has-cursor .frame:hover{box-shadow:0 22px 44px -22px rgba(0,0,0,.55)}
+html.has-cursor .frame img,html.has-cursor .frame video{transform:scale(1.06) translate(var(--tx,0px),var(--ty,0px));transition:transform .7s cubic-bezier(.2,.7,.2,1),opacity .25s}
+.magnet{transition:translate .35s cubic-bezier(.2,.7,.2,1)}
+
+/* moving band of disciplines */
+.marquee{overflow:hidden;border-block:1px solid var(--rule);padding-block:20px;margin-bottom:56px;
+  -webkit-mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee .track{display:flex;align-items:center;width:max-content;animation:marquee 42s linear infinite}
+.marquee .track > *{margin-right:36px}
+.marquee:hover .track{animation-play-state:paused}
+.marquee span{font-family:var(--f-display);font-weight:900;font-variation-settings:"wdth" 125;font-size:clamp(30px,5.4vw,70px);text-transform:uppercase;letter-spacing:-.025em;line-height:1;white-space:nowrap}
+.marquee span:nth-of-type(even){color:transparent;-webkit-text-stroke:1.5px var(--ink)}
+.marquee i{font-style:normal;color:var(--cobalt);font-size:clamp(18px,2.6vw,34px)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+@media (max-width:600px){.marquee{padding-block:14px;margin-bottom:40px}.marquee .track > *{margin-right:22px}}
+
+/* entrances */
+@keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes stretch{from{font-variation-settings:"wdth" 62;letter-spacing:.03em}to{font-variation-settings:"wdth" 125;letter-spacing:-.035em}}
+@keyframes lbIn{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:no-preference){
+  .hero .slate{animation:rise .8s .05s cubic-bezier(.2,.7,.2,1) both}
+  .hero .name{animation:rise .8s .14s cubic-bezier(.2,.7,.2,1) both}
+  .hero h1{animation:rise .9s .2s cubic-bezier(.2,.7,.2,1) both,stretch 1.5s .2s cubic-bezier(.2,.7,.2,1) both}
+  .hero .lede{animation:rise .8s .5s cubic-bezier(.2,.7,.2,1) both}
+  .hero .hero-actions{animation:rise .8s .6s cubic-bezier(.2,.7,.2,1) both}
+  .featured .tile{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+  .featured .tile:nth-child(1){animation-delay:.7s}
+  .featured .tile:nth-child(2){animation-delay:.8s}
+  .featured .tile:nth-child(3){animation-delay:.9s}
+  .reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  dialog[open] .lb{animation:lbIn .35s cubic-bezier(.2,.7,.2,1)}
+}
+@media (prefers-reduced-motion:reduce){.marquee .track{animation:none}}
+@media (max-width:600px){
+  .lb{padding-left:0;padding-right:0;gap:10px}
+  .lb video{border-radius:0}
+  .lb-bar{padding-inline:max(14px,env(safe-area-inset-left,0px)) max(14px,env(safe-area-inset-right,0px));align-items:flex-start}
+  .lb-bar .t{font-size:15px}
+  .lb-bar .m{font-size:12px}
+  .lb-nav button{width:40px;height:40px}
+  .lb-hint{display:block}
+}
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top">AMIRHOSEIN EFTEKHARI</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li class="opt"><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="top">
+  <section class="wrap hero">
+    <div class="slate mono" data-depth="-5">
+      <span>ROLE <b>Creative Director</b></span>
+      <span>BASE <b>Kuwait</b></span>
+      <span>MARKETS <b>GCC · Iran</b></span>
+      <span>REEL <b id="count">31 films</b></span>
+    </div>
+    <p class="name" data-depth="9">Amirhosein Eftekhari</p>
+    <h1 data-depth="-14">AI ads <span class="thin">&amp;</span><br>hand-drawn <span class="thin">motion</span></h1>
+    <p class="lede" data-depth="5">I make <b>AI and CGI commercials, 2D animation and motion design</b> for Gulf brands, from the first idea to the final cut. Real estate, cars, apps and retail, mostly in vertical formats made for social.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#work">See the work</a>
+      <a class="btn" href="#contact">Start a project</a>
+    </div>
+  </section>
+
+  <section class="wrap featured" id="featured" aria-label="Featured work"></section>
+
+  <div class="marquee" aria-hidden="true"><div class="track">
+    <span>AI &amp; CGI</span><i>✦</i><span>2D Animation</span><i>✦</i><span>Motion Design</span><i>✦</i><span>Commercial Edit</span><i>✦</i><span>Kuwait · GCC</span><i>✦</i><span>Sound Design</span><i>✦</i>
+    <span>AI &amp; CGI</span><i>✦</i><span>2D Animation</span><i>✦</i><span>Motion Design</span><i>✦</i><span>Commercial Edit</span><i>✦</i><span>Kuwait · GCC</span><i>✦</i><span>Sound Design</span><i>✦</i>
+  </div></div>
+
+  <section class="wrap" id="work" aria-labelledby="work-h">
+    <div class="sec-head">
+      <h2 id="work-h">Selected work</h2>
+      <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+    </div>
+    <div class="sheet" id="sheet"></div>
+  </section>
+
+  <section class="wrap" id="about" aria-labelledby="about-h">
+    <div class="sec-head"><h2 id="about-h">About</h2></div>
+    <div class="about">
+      <div>
+        <!-- Your photo: save it as media/amirhosein.jpg (portrait, about 4:5). It hides itself if the file is missing. -->
+        <figure class="portrait"><img src="media/amirhosein.jpg" alt="Amirhosein Eftekhari" loading="lazy" onerror="this.parentElement.remove()"></figure>
+        <p>I'm Amirhosein Eftekhari, a creative director working between Kuwait and Iran. I started in 2D animation and motion design, and today most of my work mixes AI and CGI footage with hand-made animation, compositing and sound design.</p>
+        <p>That mix lets a brand put a giant graduate in front of the Kuwait Towers, crash a plane into a billboard, or tell a fully illustrated story without a full production crew, while still looking crafted rather than generated.</p>
+        <p>I write the concept, direct the look, generate or animate the shots, and finish the edit and sound myself.</p>
+        <div class="clients" aria-label="Selected clients">
+          <span>National Geographic</span><span>Astroshot</span><span>SEC</span><span>Radio Javan</span><span>Citelecom</span><span>Drasti</span><span>BLK</span><span>ZNSO</span><span>Trend Q8</span><span>Dory</span><span>Al-Jisr</span><span>AX Store</span><span>Flex</span><span>Rebel</span>
+        </div>
+      </div>
+      <ul class="svc">
+        <li><b>AI &amp; CGI</b><span>Real-estate, car and out-of-home films generated, simulated and composited for Instagram, TikTok and outdoor screens.</span></li>
+        <li><b>2D animation</b><span>Illustrated character stories, explainers and brand films, frame by frame.</span></li>
+        <li><b>Motion design</b><span>3D product spots, kinetic typography and logo animation, ready for paid social.</span></li>
+        <li><b>Edit &amp; sound</b><span>Reels for hosts and influencers, with kinetic Arabic and Persian typography and full sound design.</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<section class="contact" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <h2 id="contact-h">Let's make<br>your next ad.</h2>
+    <div class="links">
+      <a href="https://www.instagram.com/amirhosein_eftekhari1/" target="_blank" rel="noopener"><span class="lbl">Instagram</span><span class="v">@amirhosein_eftekhari1</span></a>
+      <a href="https://www.behance.net/amirhoseineftekhari" target="_blank" rel="noopener"><span class="lbl">Behance</span><span class="v">behance.net/amirhoseineftekhari</span></a>
+      <div><span class="lbl">Email</span><span class="v">amirhoseineftekhariart@gmail.com</span><button type="button" class="copy" data-copy="amirhoseineftekhariart@gmail.com">Copy email</button></div>
+      <a href="https://wa.me/989339697849" target="_blank" rel="noopener"><span class="lbl">WhatsApp</span><span class="v">+98 933 969 7849</span></a>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap">© <span id="yr">2026</span> Amirhosein Eftekhari. Client work shown with credit to the brands and agencies involved.</div></footer>
+
+<dialog id="lb" aria-label="Video player">
+  <div class="lb">
+    <video id="lb-video" controls playsinline></video>
+    <div class="lb-hint">Swipe left or right for the next film</div>
+    <div class="lb-bar">
+      <div><div class="t" id="lb-t"></div><div class="m" id="lb-m"></div></div>
+      <div class="lb-nav">
+        <button type="button" id="lb-prev" aria-label="Previous film">←</button>
+        <button type="button" id="lb-next" aria-label="Next film">→</button>
+        <button type="button" id="lb-close" aria-label="Close">✕</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<script>
+/* ---------- EDIT YOUR WORK HERE ----------
+   slug  = file name in /media (slug.mp4 + slug.jpg)
+   cat   = ai | anim | motion | edit
+   ratio = 9:16 | 16:9 | 4:5
+*/
+const CATS = {ai:"AI & CGI", anim:"2D Animation", motion:"Motion Design", edit:"Commercial Edit"};
+const WORK = [
+  /* AI & CGI */
+  {slug:"kuwait-graduate",   cat:"ai",     ratio:"9:16", dur:12.0, title:"A Giant Graduate at the Kuwait Towers", client:"Drasti, Kuwait", role:"CGI · compositing on real footage"},
+  {slug:"plane-billboard",   cat:"ai",     ratio:"9:16", dur:20.1, title:"The Plane and the Billboard", client:"Citelecom", role:"CGI out-of-home film"},
+  {slug:"cinematic-cars",    cat:"ai",     ratio:"9:16", dur:19.1, title:"Your Car Deserves Better", client:"Astroshot", role:"AI car commercial"},
+  {slug:"znso-interior",     cat:"ai",     ratio:"9:16", dur:13.9, title:"Quiet Interiors", client:"ZNSO Architecture", role:"AI interior film"},
+  {slug:"burning-billboard", cat:"ai",     ratio:"9:16", dur:5.8,  title:"Billboard on Fire", client:"CGI out-of-home", role:"CGI · fire simulation"},
+  {slug:"hongqi-hs3",        cat:"ai",     ratio:"9:16", dur:17.2, title:"Hongqi HS3", client:"Automotive", role:"AI product film"},
+  {slug:"sec-day-night",     cat:"ai",     ratio:"9:16", dur:12.2, title:"Day to Night", client:"SEC, Kuwait", role:"AI time transition on real footage"},
+  {slug:"sec-2026",          cat:"ai",     ratio:"9:16", dur:18.8, title:"2026, The Next Chapter", client:"SEC, Kuwait", role:"AI · compositing"},
+  {slug:"astronaut",         cat:"ai",     ratio:"9:16", dur:14.9, title:"Your Visions Are Waiting", client:"Astroshot", role:"AI film"},
+  /* 2D animation */
+  {slug:"group-2",           cat:"anim",   ratio:"16:9", dur:61.0, title:"Live From Kuwait", client:"BLK × Astroshot", role:"2D character animation"},
+  {slug:"tariq-afiat",       cat:"anim",   ratio:"16:9", dur:42.0, title:"The Umbrella", client:"Tariq-e Afiat charity", role:"Painted 2D animation"},
+  {slug:"poobon-mashin",     cat:"anim",   ratio:"1:1",  dur:38.2, title:"Poobon Mashin", client:"Radio Javan", role:"2D animation"},
+  {slug:"dory",              cat:"anim",   ratio:"16:9", dur:41.2, title:"Dory", client:"Dory app, Kuwait", role:"Character animation"},
+  {slug:"citelkam",          cat:"anim",   ratio:"16:9", dur:45.4, title:"Nowruz Road Trip", client:"Citelecom", role:"Illustrated 2D animation"},
+  {slug:"rj-laptop",         cat:"anim",   ratio:"1:1",  dur:30.3, title:"Press Play", client:"Radio Javan", role:"2D animation"},
+  {slug:"metro",             cat:"anim",   ratio:"16:9", dur:44.0, title:"Metro Etiquette", client:"Mashhad Urban Railway", role:"2D animation"},
+  {slug:"first-step",        cat:"anim",   ratio:"4:5",  dur:15.3, title:"First Step", client:"Character test", role:"Character walk cycle"},
+  /* Motion design */
+  {slug:"astroshot-3d",      cat:"motion", ratio:"9:16", dur:16.2, title:"Hard to Explain? Make It Clear", client:"Astroshot", role:"Motion design · 3D"},
+  {slug:"aljisr-bar",        cat:"motion", ratio:"9:16", dur:14.2, title:"Protein Wafer Bar", client:"Al-Jisr", role:"Product motion"},
+  {slug:"astroshot-branding",cat:"motion", ratio:"9:16", dur:30.1, title:"Branding, in Type", client:"Astroshot", role:"Kinetic typography"},
+  {slug:"aljisr-shake",      cat:"motion", ratio:"4:5",  dur:16.1, title:"Carb Killa Shake", client:"Al-Jisr", role:"Line art to product"},
+  {slug:"foxcamp-logo",      cat:"motion", ratio:"4:5",  dur:10.5, title:"FoxCamp", client:"FoxCamp", role:"Logo animation"},
+  {slug:"astroshot-ar",      cat:"motion", ratio:"9:16", dur:27.5, title:"Astroshot, Arabic Spot", client:"Astroshot", role:"3D motion · Arabic VO"},
+  {slug:"beyerdynamic",      cat:"motion", ratio:"9:16", dur:21.2, title:"Headphones in Orbit", client:"AX Store", role:"3D product spot"},
+  {slug:"astroshot-online",  cat:"motion", ratio:"9:16", dur:15.4, title:"Millions Online", client:"Astroshot", role:"Type & light motion"},
+  /* Commercial edit */
+  {slug:"rebel-boxing",      cat:"edit",   ratio:"4:5",  dur:19.9, title:"Against Who You Were Yesterday", client:"Rebel", role:"Gym promo edit"},
+  {slug:"flex-gym",          cat:"edit",   ratio:"9:16", dur:38.7, title:"A Month at Flex", client:"Flex, Kuwait", role:"Influencer reel edit"},
+  {slug:"sec-villa",         cat:"edit",   ratio:"9:16", dur:24.8, title:"Built to Perfection", client:"SEC, Kuwait", role:"Architecture film edit"},
+  {slug:"waves-yacht",       cat:"edit",   ratio:"4:5",  dur:35.0, title:"51-Foot Yacht", client:"Waves app, Kuwait", role:"Product reel edit"},
+  {slug:"winter-carnival",   cat:"edit",   ratio:"9:16", dur:57.8, title:"Winter Carnival", client:"National Geographic", role:"Host reel · sound design"},
+  {slug:"abaya-colors",      cat:"edit",   ratio:"9:16", dur:22.1, title:"Summer Colour Guide", client:"Trend Q8", role:"Host reel · graphics"}
+];
+const FEATURED = ["kuwait-graduate","group-2","plane-billboard"];
+/* ----------------------------------------- */
+
+const MEDIA = "media/";
+const tc = s => { const m = Math.floor(s/60), r = Math.floor(s%60), f = Math.round((s%1)*25); return `00:${String(m).padStart(2,"0")}:${String(r).padStart(2,"0")}:${String(f).padStart(2,"0")}`; };
+const ar = r => r.replace(":"," / ");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const playIcon = '<svg viewBox="0 0 10 12" aria-hidden="true"><path d="M0 0l10 6-10 6z"/></svg>';
+
+function tile(w, i, big){
+  return `<figure class="tile" data-cat="${w.cat}" data-i="${i}" style="margin:0">
+    <button class="frame" type="button" style="aspect-ratio:${ar(w.ratio)}" aria-label="Play ${esc(w.title)}" data-i="${i}">
+      <img src="${MEDIA}${w.slug}.jpg" alt="" loading="${big ? "eager" : "lazy"}" decoding="async">
+      <span class="ratio">${w.ratio}</span>
+      <span class="tc">${tc(w.dur)}</span>
+      <span class="play">${playIcon}</span>
+    </button>
+    <figcaption class="cap">
+      <span class="k">${CATS[w.cat]}</span>
+      <span class="t">${esc(w.title)}</span>
+      <span class="m">${esc(w.client)} · ${esc(w.role)}</span>
+    </figcaption>
+  </figure>`;
+}
+
+document.getElementById("featured").innerHTML = FEATURED.map(s => { const i = WORK.findIndex(w => w.slug === s); return tile(WORK[i], i, true); }).join("");
+document.getElementById("sheet").innerHTML = WORK.map((w,i) => tile(w,i,false)).join("");
+document.getElementById("count").textContent = WORK.length + " films";
+document.getElementById("yr").textContent = new Date().getFullYear();
+
+/* filters */
+const counts = WORK.reduce((a,w) => (a[w.cat] = (a[w.cat]||0)+1, a), {});
+const fEl = document.getElementById("filters");
+fEl.innerHTML = [["all","All",WORK.length], ...Object.keys(CATS).map(k => [k, CATS[k], counts[k]||0])]
+  .map(([k,l,n]) => `<button type="button" data-f="${k}" aria-pressed="${k==="all"}">${l}<span class="n">${n}</span></button>`).join("");
+let visible = WORK.map((_,i) => i);
+fEl.addEventListener("click", e => {
+  const b = e.target.closest("button"); if (!b) return;
+  fEl.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  const f = b.dataset.f;
+  document.querySelectorAll("#sheet .tile").forEach(t => t.hidden = !(f === "all" || t.dataset.cat === f));
+  visible = WORK.map((w,i) => i).filter(i => f === "all" || WORK[i].cat === f);
+});
+
+/* hover preview (mouse only) */
+const canHover = matchMedia("(hover: hover) and (pointer: fine)").matches && !matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (canHover) {
+  document.addEventListener("pointerover", e => {
+    const fr = e.target.closest(".frame"); if (!fr || fr.dataset.live) return;
+    fr.dataset.live = "1";
+    const v = document.createElement("video");
+    Object.assign(v, {muted:true, loop:true, playsInline:true, preload:"auto", src: MEDIA + WORK[fr.dataset.i].slug + ".mp4"});
+    v.setAttribute("aria-hidden","true");
+    fr.insertBefore(v, fr.querySelector(".ratio"));
+    v.play().then(() => fr.classList.add("playing")).catch(()=>{});
+    fr.addEventListener("pointerleave", () => { v.pause(); v.remove(); fr.classList.remove("playing"); delete fr.dataset.live; }, {once:true});
+  });
+}
+
+/* lightbox */
+const lb = document.getElementById("lb"), lv = document.getElementById("lb-video");
+let cur = 0;
+function openLB(i){
+  cur = i; const w = WORK[i];
+  lv.src = MEDIA + w.slug + ".mp4"; lv.poster = MEDIA + w.slug + ".jpg";
+  document.getElementById("lb-t").textContent = w.title;
+  document.getElementById("lb-m").textContent = `${w.client} · ${w.role} · ${w.ratio} · ${tc(w.dur)}`;
+  if (!lb.open) { lb.showModal(); document.documentElement.classList.add("lb-open"); }
+  lv.play().catch(()=>{});
+}
+function step(d){ const list = visible.length ? visible : WORK.map((_,i)=>i); const p = list.indexOf(cur); openLB(list[(p + d + list.length) % list.length]); }
+document.addEventListener("click", e => { const fr = e.target.closest(".frame"); if (fr) openLB(+fr.dataset.i); });
+document.getElementById("lb-close").onclick = () => lb.close();
+document.getElementById("lb-prev").onclick = () => step(-1);
+document.getElementById("lb-next").onclick = () => step(1);
+lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
+lb.addEventListener("close", () => { lv.pause(); lv.removeAttribute("src"); lv.load(); document.documentElement.classList.remove("lb-open"); });
+lb.addEventListener("keydown", e => { if (e.key === "ArrowRight") step(1); if (e.key === "ArrowLeft") step(-1); });
+/* copy buttons (email links do not open everywhere) */
+document.querySelectorAll(".copy").forEach(b => b.addEventListener("click", () => {
+  const done = () => { const o = b.textContent; b.textContent = "Copied"; setTimeout(() => b.textContent = o, 1500); };
+  navigator.clipboard?.writeText(b.dataset.copy).then(done).catch(() => {
+    const r = document.createRange(); r.selectNodeContents(b.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+  });
+}));
+/* ---------- motion ---------- */
+(() => {
+  const root = document.documentElement;
+  const RM = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const FINE = matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  /* film counter counts up on load */
+  if (!RM) {
+    const el = document.getElementById("count"), n = WORK.length, t0 = performance.now();
+    const tick = t => { const p = Math.min(1, (t - t0) / 1400); el.textContent = Math.round(n * (1 - Math.pow(1 - p, 3))) + " films"; if (p < 1) requestAnimationFrame(tick); };
+    requestAnimationFrame(tick);
+  }
+
+  /* reveal on scroll */
+  if (!RM) {
+    let els = [...document.querySelectorAll(".sheet .tile, .sec-head, .about > div > p, .clients, .svc li, .portrait, .contact h2, .contact .links > *")];
+    els.forEach((e, i) => { e.classList.add("reveal"); e.style.transitionDelay = (i % 4) * 70 + "ms"; });
+    let queued = false;
+    const check = () => {
+      queued = false;
+      const limit = innerHeight * .94;
+      els = els.filter(e => { const r = e.getBoundingClientRect(); if (r.top < limit && (r.bottom > 0 || r.height === 0)) { e.classList.add("in"); return false; } return true; });
+      if (!els.length) { removeEventListener("scroll", onScroll); removeEventListener("resize", onScroll); }
+    };
+    const onScroll = () => { if (!queued) { queued = true; requestAnimationFrame(check); } };
+    addEventListener("scroll", onScroll, {passive: true});
+    addEventListener("resize", onScroll, {passive: true});
+    check();
+    /* replay the reveal when a filter is picked */
+    fEl.addEventListener("click", () => requestAnimationFrame(() => {
+      document.querySelectorAll("#sheet .tile:not([hidden])").forEach((t, i) => {
+        t.classList.remove("in"); t.style.transitionDelay = Math.min(i, 12) * 35 + "ms"; void t.offsetWidth; t.classList.add("in");
+      });
+    }));
+  }
+
+  if (!FINE || RM) return;
+
+  /* custom cursor */
+  root.classList.add("has-cursor");
+  const ring = document.createElement("div"); ring.className = "cursor-ring"; ring.innerHTML = "<span>Play</span>";
+  const dot = document.createElement("div"); dot.className = "cursor-dot";
+  document.body.append(ring, dot);
+  let mx = -100, my = -100, rx = mx, ry = my, px = 0, py = 0, cx = 0, cy = 0;
+  addEventListener("pointermove", e => {
+    if (e.pointerType !== "mouse") return;
+    mx = e.clientX; my = e.clientY; px = mx / innerWidth * 2 - 1; py = my / innerHeight * 2 - 1;
+    root.classList.add("c-on");
+    dot.style.transform = `translate3d(${mx}px,${my}px,0)`;
+    const t = e.target.closest(".frame, a, button");
+    ring.classList.toggle("is-play", !!t && t.classList.contains("frame"));
+    ring.classList.toggle("is-link", !!t && !t.classList.contains("frame"));
+  }, {passive: true});
+  document.addEventListener("mouseleave", () => root.classList.remove("c-on"));
+  addEventListener("pointerdown", () => ring.classList.add("is-down"));
+  addEventListener("pointerup", () => ring.classList.remove("is-down"));
+
+  /* whole-page drift: hero lines and featured frames lean slightly toward the mouse */
+  document.querySelectorAll("#featured .tile").forEach((t, i) => t.dataset.depth = [10, -7, 13][i] || 0);
+  const drift = [...document.querySelectorAll("[data-depth]")];
+  const loop = () => {
+    rx += (mx - rx) * .18; ry += (my - ry) * .18;
+    ring.style.transform = `translate3d(${rx.toFixed(1)}px,${ry.toFixed(1)}px,0)`;
+    cx += (px - cx) * .05; cy += (py - cy) * .05;
+    for (const el of drift) { const d = +el.dataset.depth; el.style.translate = `${(cx * d).toFixed(2)}px ${(cy * d * .6).toFixed(2)}px`; }
+    requestAnimationFrame(loop);
+  };
+  requestAnimationFrame(loop);
+
+  /* soft light that follows the mouse across the hero */
+  const hero = document.querySelector(".hero");
+  hero.addEventListener("pointermove", e => { const r = hero.getBoundingClientRect(); hero.style.setProperty("--mx", e.clientX - r.left + "px"); hero.style.setProperty("--my", e.clientY - r.top + "px"); }, {passive: true});
+
+  /* magnetic buttons and links */
+  document.querySelectorAll(".btn, .filters button, nav ul a, .brand, .lb-nav button, .contact .links > *, .copy").forEach(el => {
+    const k = el.matches(".contact .links > *") ? .07 : .3;
+    el.classList.add("magnet");
+    el.addEventListener("pointermove", e => { const r = el.getBoundingClientRect(); el.style.translate = `${((e.clientX - r.left - r.width / 2) * k).toFixed(1)}px ${((e.clientY - r.top - r.height / 2) * k).toFixed(1)}px`; });
+    el.addEventListener("pointerleave", () => { el.style.translate = "0px 0px"; });
+  });
+
+  /* film frames tilt toward the mouse, the picture inside shifts the other way */
+  let tf = null;
+  const reset = f => ["--rx", "--ry", "--tx", "--ty"].forEach(p => f.style.removeProperty(p));
+  document.addEventListener("pointermove", e => {
+    const f = e.target.closest(".frame");
+    if (tf && tf !== f) { reset(tf); tf = null; }
+    if (!f) return;
+    tf = f;
+    const r = f.getBoundingClientRect(), x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+    f.style.setProperty("--ry", (x * 7).toFixed(2) + "deg"); f.style.setProperty("--rx", (-y * 7).toFixed(2) + "deg");
+    f.style.setProperty("--tx", (-x * 12).toFixed(1) + "px"); f.style.setProperty("--ty", (-y * 12).toFixed(1) + "px");
+  }, {passive: true});
+})();
+
+/* swipe between films on phones */
+let sx = null, sy = 0;
+lb.addEventListener("touchstart", e => { const t = e.touches[0]; sx = t.clientX; sy = t.clientY; }, {passive:true});
+lb.addEventListener("touchend", e => {
+  if (sx === null) return;
+  const t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy; sx = null;
+  if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1);
+  else if (dy > 110 && Math.abs(dy) > Math.abs(dx) * 1.5) lb.close();
+}, {passive:true});
+</script>
+</body>
+</html>
